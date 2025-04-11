@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f9ff; */
+    /* display: flex; */
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.form-container {
+    /* background-color: #d7e7f1; */
+    /* display: flex; */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: #0078d4;
+}
+
+.h1 {
+    color: #0078d4; 
+}
+
+.s-color {
+    color: #0078d4;  
+}
+
+label {
+    /* display: block; */
+    margin-top: 12px;
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+    display: flex;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8acbcc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+.required {
+    color: red;
+}

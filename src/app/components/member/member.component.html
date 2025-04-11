@@ -1,0 +1,92 @@
+<div class="row">
+    <div class="col-lg-6">
+        <h1>Add <span class="s-color"> New </span>Member</h1>
+        <img src="./assets/images/A122.jpeg" alt="Career Image" class="bg-image"><br><br>
+        <h2 class="h1">Welcoming our little bundle of joy with open arms and hearts.</h2>
+        <p>Deliver an overdose of cuteness to your Instagram feed with these adorable captions for your new family
+            member. These captions are guaranteed to melt hearts and bring smiles to your followers.</p>
+    </div>
+    <div class="col-lg-6 ">
+        <div class="form-container">
+
+            <!-- <div > -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Family Member Name -->
+                    <label for="name">Full Name:<span class="required">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter full name"
+                        [(ngModel)]="user.name" required>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Age -->
+                    <label for="age">Age:<span class="required">*</span></label>
+                    <input type="number" id="age" placeholder="Enter age" [(ngModel)]="user.age" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Gender -->
+                    <label>Gender:</label>
+                    <select class="form-controm">
+                        <option [value]="user.gender">Male</option>
+                        <option [value]="user.gender" selected>FeMale</option>
+                        <option [value]="user.gender">Other</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <!-- Date -->
+                    <label>Date:</label>
+                    <input type="date" class="form-control" (onChange)="selectDate($event)"
+                        [(ngModel)]="user.selectedDate">
+                </div>
+                <div class="col-lg-3">
+
+                    <label>Time:</label>
+                    <input type="time" class="form-control">
+                </div>
+            </div>
+
+            <!-- Health Condition -->
+            <label for="condition">Health Condition:</label>
+            <input type="text" id="condition" placeholder="e.g., Diabetes, Hypertension" [(ngModel)]="user.HCondition">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Doctor's Contact -->
+                    <label for="doctor">Doctor Name:</label>
+                    <input type="text" id="doctor" placeholder="Enter Name" [(ngModel)]="user.doctorName">
+
+                </div>
+                <div class="col-lg-6">
+                    <!-- Doctor's Contact -->
+                    <label for="doctor">Doctor's Contact Number:</label>
+                    <input type="text" id="doctor" placeholder="Enter contact number"
+                        [(ngModel)]="user.DoctorContactNumber">
+                </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <label for="emergency">Emergency Contact:<span class="required">*</span></label>
+            <input type="text" id="emergency" placeholder="Enter emergency contact number"
+                [(ngModel)]="user.EmergencyContact" required>
+            <!-- Medication -->
+            <label for="medication">Medication Details:</label>
+            <textarea id="medication" rows="3" placeholder="Enter medication details"
+                [(ngModel)]="user.MDetails"></textarea>
+
+
+
+            <!-- Submit Button -->
+            <button type="submit" (click)="Save()" style="width: 20%;">Submit</button>
+            <!-- </select> -->
+            <!-- </div> -->
+            <!-- <h2>Family Health Tracker</h2> -->
+
+
+        </div>
+
+    </div>
+</div>

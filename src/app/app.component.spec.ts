@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'servicenow-application'`, () => {
+  it(`should have as title 'healthify-application'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('servicenow-application');
+    expect(app.title).toEqual('healthify-application');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('servicenow-application app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('healthify-application app is running!');
   });
 });

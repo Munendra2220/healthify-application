@@ -1,0 +1,42 @@
+.c-blue {
+    color: #738fc1;
+}
+
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+
+  .modal-content {
+    margin-top: 12%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .join-us {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .join-us button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }

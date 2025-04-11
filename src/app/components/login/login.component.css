@@ -1,0 +1,104 @@
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 97vh;
+    /* background: #f4f6f9; */
+    background-image: url('/assets/images/bk.jpg');
+    background-size: contain;
+    background-repeat: round;
+
+}
+/* D:\munendra-healthify\healthify-application\src\assets\images\bk.jpg */
+
+.login-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 573px; */
+    margin-right: 160px;
+    /* height: 90vh; */
+    
+}
+
+h2 {
+    color: #354B6B;
+    font-size: 22px;
+    margin-bottom: 5px;
+    /* margin-top: 75px; */
+}
+
+p {
+    color: #7d8ca3;
+    font-size: 14px;
+}
+
+.login-box {
+    background: linear-gradient(to right, #8b9dc3, #3b5998);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    border: none;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    outline: none;
+    background: #e3e6f0;
+    text-align: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.login-btn {
+    background: #354B6B;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    background: #2a3b5d;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #7d8ca3;
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    color: #3b5998;
+}
